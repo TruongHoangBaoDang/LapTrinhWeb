@@ -1,0 +1,71 @@
+ Table admin:Mô tả các dữ liệu của admin
+Admin_id(int (10))là id của admin
+Admin_email(varchar(255))là email của admin
+Admin_password (varchar(255))là password admin
+Admin_name(varchar(255)) là tên admin
+Admin_phone(varchar(255)) là số điện thoại
+Created_at (timestamp)  là ngày tạo
+Update_at (timestamp)  ngày cập nhập
+Table Customer mô tả dữ liệu khách hàng
+Id (int) là số thứ tự khách hàng
+Name(char(100))  là tên khách hàng
+Gender (varchar(100)) là giới tính khách hàng
+Email(varchar(255))  là email khách hàng
+Address(varchar(255))  là địa chỉ khách hàng
+Phone_number (varchar(255)) là số điện thoại
+Note (varchar(255)) ghi chú khách hàng
+Created_at (timestamp) là ngày tạo
+Update_at (timestamp)  ngày cập nhập
+Table User mô tả người dùng
+Id (varchar(255))là số thứ tự người dùng
+Full_name(varchar(255)) là tên đầy đủ người dùng 
+Email(varchar(255)) địa chỉ email người dùng
+Password(varchar(255)) mật khẩu người dùng
+Phone(varchar(255)) số điện thoại
+Address(varchar(255)) địa chỉ người dùng
+Remember_token (varchar(255)) ghi nhớ
+Created_at (timestamp) ngày tạo người dùng
+Updated_at(timestamp) ngày cập nhập người dùng
+Table products
+Id (int)
+Name (char(100)) tên sản phẩm
+Id_type (varchar(255))  Số thự tự loại sản phẩm
+Description (text)Mô tả sản phẩm
+Unit_price  (varchar(255)) Đơn giá sản phẩm
+Promotion_price(varchar(255)) Giá khuyến mãi
+Image (varchar(255)) Hình ảnh
+Unit (varchar(255)) Đơn vị tính
+Table bills(varchar(255))  Mô tả đơn giá
+Id (varchar(255)) số thứ tự đơn hàng
+Id_customer(varchar(255)) số thứ tự khác hàng
+Date_order(varchar(255)) ngày đặt hàng
+Total(float) tổng hóa đơn
+Payment(varchar(255)) phương thức thanh toán 
+Note(varchar(255)) ghi chú
+Created_At(timestamp)  ngày tạo
+Updated_at(timestamp)  ngày cập nhập
+Table Bills_detail Chi tiết hóa đơn
+Id(int) số thứ tự
+Id_bill(int) số thứ tự hóa đơn
+Id_product(int)số thứ tự sản phẩm
+Quantity(int(11))Số lượng
+Unit_price(timestamp)  Đơn vị tính
+Create_at(timestamp)  ngày tạo
+Update_at ngày cập nhập
+Table News chi tiết tin tức
+Id(int)số thứ tự
+Title(varchar(255)) Tiêu đề
+
+Content(varchar(255))Nội dung
+
+Image(varchar(255)) Hình ảnh nội dung
+
+Create_at ngày tạo nội dùng 
+Update_at ngày cập nhập nôi dung
+Table type_products Bảng loại sản phẩm
+Id int số thứ tự loại sản phẩm
+Name(varchar(255))Tên loại sản phẩm
+
+Description(text) Mô tả loại sản phẩm
+Create_at(timestamp)  ngày tạo loại sản phẩm
+Update_at(timestamp)  ngày cập nhập
